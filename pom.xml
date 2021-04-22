@@ -8,18 +8,12 @@
 		<module>service</module>
 		<module>repository</module>
 		<module>web</module>
-		<module>email</module>
-		<module>email</module>
-        <module>email</module>
-		<module>email</module>
-		<module>email-api</module>
-		<module>email</module>
 		<module>email-app</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.9.RELEASE</version>
+		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.javatechie</groupId>
@@ -61,6 +55,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>HMSApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

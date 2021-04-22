@@ -1,15 +1,17 @@
 package com.javatechie.service.doctor;
 
-import com.javatechie.dao.doctor.DoctorRepository;
-import com.javatechie.mailservice.EmailService;
-import com.javatechie.model.doctor.Doctor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.javatechie.dao.doctor.DoctorRepository;
+import com.javatechie.mailservice.EmailService;
+import com.javatechie.model.doctor.Doctor;
 
 @Service
 public class DoctorService {

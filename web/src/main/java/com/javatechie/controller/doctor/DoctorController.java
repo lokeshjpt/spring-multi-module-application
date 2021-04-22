@@ -1,12 +1,13 @@
 package com.javatechie.controller.doctor;
 
-import com.javatechie.model.doctor.Doctor;
-import com.javatechie.service.doctor.DoctorService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.javatechie.model.doctor.Doctor;
+import com.javatechie.service.doctor.DoctorService;
 
 @RestController
 public class DoctorController {
